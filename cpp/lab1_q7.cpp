@@ -45,7 +45,7 @@ int main() {
   cin >> N;
 
   // DYNAMIC ARRAY OF STUDENT OBJECTS
-  STUDENT* students = new STUDENT[N];  // Default constructor used
+  STUDENT* students = new STUDENT[N]; 
 
   // INPUT STUDENT RECORDS
   for (int index = 0; index < N; index++) {
@@ -55,8 +55,8 @@ int main() {
 
     cout << "Enter details for student " << index + 1 << ":" << endl;
     cout << "Name: ";
-    cin.ignore(); // To clear any newline character in the input buffer
-    getline(cin, name); // Use getline for full name
+    cin.ignore();
+    getline(cin, name);
     cout << "Roll Number: ";
     cin >> roll_number;
     cout << "Marks: ";
